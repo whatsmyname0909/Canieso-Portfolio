@@ -1,0 +1,242 @@
+* {
+
+    box-sizing: border-box;
+  }
+
+  header {
+    background: linear-gradient(
+        to bottom,
+        #000000,
+        #8B0000   
+    );
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-container img {
+    width: 100px;
+    height: auto;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 600px; 
+}
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .signup-box {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    width: 450px;
+    min-width: 300px;
+    margin: 20px;
+    color: #333;
+  }
+  
+  .signup-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .signup-box .quick-signup {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .signup-box button.google {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .signup-box .divider {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin: 15px 0;
+    position: relative;
+  }
+  
+  .signup-box .divider::before,
+  .signup-box .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .signup-box .divider::before {
+    left: 0;
+  }
+  
+  .signup-box .divider::after {
+    right: 0;
+  }
+  
+  .name-fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .name-fields input {
+    flex: 1;
+  }
+  
+  .signup-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .signup-box .password-hint {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0 15px;
+  }
+  
+  .signup-box button.signup {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+  background-color: #000000;
+}
+
+.testimonial {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonial-text p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .footer h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+@media (max-width: 768px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
